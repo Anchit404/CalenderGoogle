@@ -9,7 +9,7 @@ const CreateEvent = ({ refreshEvents }) => {
       alert('Please fill out all fields.');
       return;
     }
-
+//Making API request
     try {
       await axios.post('http://localhost:5000/api/google/events', {
         eventName: event.name,
